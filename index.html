@@ -49,14 +49,35 @@
     </section>
     <footer>
         <p>Direitos reservado a Rodrigo</p>
-
+        
         <section id="contatos">
             <h2>Contatos</h2>
-
+        
             <p>
-                E-mail: <a href="mailto:rodrigo@gmail.com">rodrigo@gmail.com</a><br>
-                Telefone: <a href="tel:48111119999">48111119999</a>
+                Tem um projeto em mente? Entre em contato.
             </p>
+            <form action="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone">
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orcamento">Orçamento</option><br>
+                    <option value="duvida">Duvida:</option><br>
+                    <option value="outro">Outro:</option><br>
+        
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="20" rows="5" required></textarea>
+        
+                    <input type="checkbox" id="inscricao" name="inscricao">
+                    <label for="inscricao">Deseja receber minhas newsletter? Fique por dentro.</label>
+                    <br>
+                    <input type="submit" value="Enviar mensagem">
+                </select>
+            </form>
         </section>
     </footer>
 </body>
